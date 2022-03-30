@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+    <title>TESLA</title>
+
+</head>
+
+<style>
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.header {
+
+    width: 100%;
+    height: 100vh;
+    background-image:url(https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_1013/v1632018669/cars/tesla/taneli-lahtinen-tG5TwCXg0bw-unsplash_nbyulp.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation-name: bg-img;
+    animation-duration: 8s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg-img {
+
+    from {
+
+        background-image:url(https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_1013/v1632018669/cars/tesla/taneli-lahtinen-tG5TwCXg0bw-unsplash_nbyulp.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+    }
+
+    to {
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_1041/v1632019631/cars/tesla/bram-van-oost-WIhlNrqSysc-unsplash_pagsiv.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 240, 0.9);
+    font-weight: 400;
+}
+
+
+nav img {
+    width: 150px;
+    transition: 0.5s;
+}
+
+nav img:hover{
+
+    background-color: transparent;
+    padding: 0px 10px;
+    border-radius: 8px;
+
+}
+.nav-links {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px 15px;
+    position: relative;
+    transition: 0.6s;
+
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+.nav-links ul li:hover {
+
+    background-color: rgb(60, 60, 60, 0.1);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: whitesmoke;
+
+}
+
+.slogan {
+    width: 70%;
+    background-color: rgb(60, 60, 60, 0.7);
+    color:whitesmoke;
+    position: absolute;
+    padding: 5% 2%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
+.slogan h1{
+    font-size: 4vw;
+}
+
+.order-btn{
+    display: inline-block;
+    text-decoration: none;
+    margin: 25px 0 40px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 12px;
+    padding: 12px 34px;
+    font-size: 13px;
+    opacity: 0.6;
+    transition: 0.5s;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.order-btn:hover{
+
+    opacity: 2;
+}
+
+
+.dropbtn {
+
+    display: none;
+}
+
+.dropdown {
+
+    display: none;
+}
+.dropdown-content {
+
+    display: none;
+}
+
+
+.dropdown-content a {
+
+    display: none;
+}
+
+.dropdown-content a {
+
+    display: none;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: none;
+}
+
+
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    text-align: center;
+}
+
+  
+  
+
+@media(max-width: 800px){
+
+
+    .slogan {
+
+        width: 60%;
+        padding: 8% 5%;
+        
+    }
+
+    .slogan h1 {
+
+        font-size: 24px;
+    }
+
+    .slogan p {
+        font-size: 8px;
+    }
+
+    .nav-links ul li{
+
+        display: none;
+
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        color: rgb(60, 60, 60, 0.7);
+        padding: 18px;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .dropdown {
+    
+        text-align: left;
+        position: absolute;
+        right: 0%;
+        display: block;
+    }
+    .dropdown-content {
+        position: absolute;
+        background-color: rgb(240, 240, 240, 0.9);
+        right: 0%;
+        width: 180px;
+        height: 70vh;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+    
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+    }
+    
+    .dropdown-content a:hover{
+
+        background-color: rgb(60, 60, 60, 0.1);
+      }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: rgb(60, 60, 60, 0.1);
+    }
+      
+
+
+}
+
+</style>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_173/v1632205815/cars/tesla/Tesla-logo-PNG-File_gj7qgy.png"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="models.html">PRODUCT&MODEL</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <!--media queries with max-width of 800px -->
+
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-content">
+            <a href="models.html">PRODUCT&MODEL</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+
+    </nav>
+
+        
+<div class="slogan">
+
+    <h1>LET'S DRIVE THE FUTURE.</h1>
+    <P>To create an entire sustainable energy ecosystem.</P>
+    <a href="" class="order-btn">CUSTOM ORDER</a>
+
+
+</div>
+
+</section>
+<section class="footer">
+    <p>Tesla 2021</p>
+
+    <img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_131/v1632461106/cars/tesla/kisspng-tesla-roadster-tesla-motors-tesla-model-s-car-salesforce-logo-5b4baab63766a3.2888556215316855582269_qwicat.png">
+
+</section>
+
+
+</body>
+
+</html>

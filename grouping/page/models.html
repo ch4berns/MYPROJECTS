@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+    <title>Models</title>
+
+</head>
+
+<style>
+    * {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    }
+
+body {
+    background-color: whitesmoke;
+}
+
+
+
+
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 240, 0.9);
+    font-weight: 400;
+}
+nav img {
+    width: 150px;
+    transition: 0.5s;
+}
+
+nav img:hover{
+
+    background-color: transparent;
+    padding: 0px 10px;
+    border-radius: 8px;
+
+}
+.nav-links {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px 15px;
+    position: relative;
+    transition: 0.6s;
+
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+.nav-links ul li:hover {
+
+    background-color: rgb(60, 60, 60, 0.1);
+    padding: 12px 5px;
+    border-radius: 8px;
+    color: whitesmoke;
+
+}
+
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes image{
+
+    from {
+
+        left: 0%;
+    }
+    
+    to {
+        left: 4%;
+    }
+    
+}
+
+.model-col{
+
+    flex-basis: 50%;
+    text-align: left;
+    animation-name: image;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    position: relative;
+    
+}
+
+
+
+.model-col img {
+
+    width: 100%;
+}
+
+
+h1 {
+
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-buy {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 6px 25px;
+    border-radius: 18px 10px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button {
+    background-color: black; 
+    color:white; 
+    border: 2px solid rgb(20, 20, 20);
+}
+  
+.button:hover {
+    background-color:transparent;
+    color: black;
+}
+
+h2 {
+
+    display: inline-block;
+    padding: 10px 5px;
+    margin-top: 0%;
+    font-size: 20px;
+
+}
+
+hr {
+
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.model-s{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 13%;
+}
+
+
+.model-s p {
+    color: black;
+    background: rgb(60, 60, 60, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+.model-3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 13%;
+}
+
+.model-3 p {
+    color:whitesmoke;
+    background: rgb(60, 60, 60, 0.5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+.model-x{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 13%;
+}
+
+
+.model-x p {
+    color:black;
+    background: rgb(60, 60, 60, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.model-y{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 5%;
+}
+.model-y p {
+    color:whitesmoke;
+    background: rgb(60, 60, 60, 0.5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+.model-y img {
+
+    position:relative;
+    right: 5%;
+}
+
+.dropbtn {
+
+    display: none;
+}
+.dropdown {
+
+    display: none;
+}
+.dropdown-content {
+
+    display: none;
+}
+
+
+.dropdown-content a {
+
+    display: none;
+}
+
+.dropdown-content a {
+
+    display: none;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: none;
+}
+
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 35vh;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    text-align: center;
+}
+
+  
+
+
+@media (max-width: 800px){
+
+    .nav-links ul li{
+
+        display: none;
+
+    }
+    
+    .dropbtn {
+        background-color: transparent;
+        color: rgb(60, 60, 60, 0.7);
+        padding: 18px;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+    .dropdown {
+    
+        text-align: left;
+        position: absolute;
+        right: 0%;
+        display: block;
+    }
+    .dropdown-content {
+        position: absolute;
+        background-color: rgb(240, 240, 240, 0.9);
+        right: 0%;
+        width: 200px;
+        height: 100vh;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+    
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+    }
+    
+    .dropdown-content a:hover{
+
+        background-color: rgb(60, 60, 60, 0.1);
+      }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: rgb(60, 60, 60, 0.1);
+    }
+
+
+    .row {
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        padding: 1px 5px;
+        font-size: 12px;
+    }
+
+    hr {
+        width: 200px;
+    }
+
+    .btn-buy {
+        font-size: 8px;
+        position: absolute;
+        right: 40%;
+        margin-bottom: 5%;
+    }
+}
+
+</style>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_173/v1632205815/cars/tesla/Tesla-logo-PNG-File_gj7qgy.png"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="models.html">PRODUCT&MODEL</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+
+<!--media queries with max-width of 800px -->
+
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-content">
+            <a href="models.html">PRODUCT&MODEL</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+
+        
+    </nav>
+    
+</section>
+
+<section class="model-s">
+    <h1>MODEL S</h1>
+    <button class="btn-buy button">Buy Now</button>
+    
+    <div class="row">
+        <div class="model-col">
+                <img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_500/v1632306390/cars/tesla/pngwing.com_ksxsbq.png">
+        </div>
+
+        <div class="model-col">
+            <h2>1,020hp<br>Peakpower</h2>
+            <h2>200mph<br>Topspeed</h2>
+            <h2>1.99s<br>0-60mph</h2>
+            <p>Model S is built from the ground up as an electric vehicle, with a high-strength architecture and floor-mounted battery pack for incredible occupant protection and low rollover risk. Every Model S includes Tesla’s latest active safety features, such as Automatic Emergency Braking, at no extra cost.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<hr>
+
+<section class="model-3">
+    <h1>MODEL 3</h1>
+    <button class="btn-buy button">Buy Now</button>
+    
+    <div class="row">
+        <div class="model-col">
+                <img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,h_239,w_346/v1632321416/cars/tesla/Daco_297609_asafso.png">
+        </div>
+
+        <div class="model-col">
+            <h2>353mi<br>EPA est.</h2>
+            <h2>dddd<br>Dual Motor</h2>
+            <h2>3.1s<br>0-60mph</h2>
+
+            
+            <p>Safety is the most important part of the overdsadsadall Model 3 design. The metal structure is a combination of aluminum and steel, for maximum strength in every area. In a roof-crush test, Model 3 resisted four times its own mass, even with an all-glass roof: that's the same weight as two full-grown African elephants.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<hr>
+
+<section class="model-x">
+    <h1>MODEL X</h1>
+    <button class="btn-buy button">Buy Now</button>
+    
+    <div class="row">
+        <div class="model-col">
+                <img src="https://res.cloudinary.com/djo6hqejl/image/upload/v1632396505/cars/tesla/pngfind.com-tesla-png-245127_wes3d7.png">
+        </div>
+
+        <div class="model-col">
+            <h2>1,020hp<br>Peak Power</h2>
+            <h2>9.9s<br>1/4 Mile</h2>
+            <h2>2.5s<br>0-60mph</h2>
+            <p>With the most storage space and towing capacity of any electric SUV, and seating for up to seven adults, Model X delivers maximum utility. Front doors open and close automatically, Falcon Wing doors allow for easier loading and a standard trailer hitch lets you bring your gear anywhere you go.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<hr>
+
+<section class="model-y">
+    <h1>MODEL Y</h1>
+    <button class="btn-buy button">Buy Now</button>
+    
+    <div class="row">
+        <div class="model-col">
+                <img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_363/v1632398349/cars/tesla/pngaaa.com-4219205_kkjsvj.png">
+        </div>
+
+        <div class="model-col">
+            <h2>76 cu ft<br>Cargo Space</h2>
+            <h2>326 mi<br>ECA est.</h2>
+            <h2>AWD<br>Dual Motor</h2>
+            <p>Like every Tesla, Model Y is designed to be the safest vehicle in its class. The low center of gravity, rigid body structure and large crumple zones provide unparalleled protection.
+                Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Each second row seat folds flat independently, creating flexible storage for skis, furniture, luggage and more. The liftgate opens to a low trunk floor that makes loading and unloading easy and quick.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+    <p>Tesla 2021</p>
+
+    <img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_131/v1632461106/cars/tesla/kisspng-tesla-roadster-tesla-motors-tesla-model-s-car-salesforce-logo-5b4baab63766a3.2888556215316855582269_qwicat.png">
+
+</section>
+
+</body>
+</html>

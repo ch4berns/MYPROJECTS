@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+    <title>About Us</title>
+
+</head>
+<style>
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 240, 0.9);
+    font-weight: 400;
+}
+nav img {
+    width: 150px;
+    transition: 0.5s;
+}
+
+nav img:hover{
+
+    background-color: transparent;
+    padding: 0px 10px;
+    border-radius: 8px;
+
+}
+.nav-links {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px 15px;
+    position: relative;
+    transition: 0.6s;
+
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+.nav-links ul li:hover {
+
+    background-color: rgb(60, 60, 60, 0.1);
+    padding: 12px 5px;
+    border-radius: 8px;
+    color: whitesmoke;
+
+}
+
+h1 {
+
+    font-size: 30px;
+}
+
+.contact {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 15px;
+    margin-bottom: 13%;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@keyframes image{
+
+    from {
+
+        left: 0%;
+    }
+    
+    to {
+        left: 4%;
+    }
+    
+}
+
+.contact-col{
+
+    flex-basis: 45%;
+    text-align: left;
+    animation-name: image;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    position: relative;
+    
+}
+
+.about img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+
+.about p {
+    opacity: 0.7;
+}
+
+
+.dropbtn {
+
+    display: none;
+}
+.dropdown {
+
+    display: none;
+}
+.dropdown-content {
+
+    display: none;
+}
+
+
+.dropdown-content a {
+
+    display: none;
+}
+
+.dropdown-content a {
+
+    display: none;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: none;
+}
+
+
+input[type=text] {
+    width: 80%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+    
+}
+
+select {
+    width: 80%;
+    padding: 16px 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(6, 71, 212);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+  input[type=submit]:hover {
+    background-color: blue;
+
+}
+
+
+
+
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 35vh;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 800px){
+
+    .nav-links ul li{
+
+        display: none;
+
+    }
+    
+    .dropbtn {
+        background-color: transparent;
+        color: rgb(60, 60, 60, 0.7);
+        padding: 18px;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+    .dropdown {
+    
+        text-align: left;
+        position: absolute;
+        right: 0%;
+        display: block;
+    }
+    .dropdown-content {
+        position: absolute;
+        background-color: rgb(240, 240, 240, 0.9);
+        right: 0%;
+        width: 200px;
+        height: 100vh;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+    
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+    }
+    
+    .dropdown-content a:hover{
+
+        background-color: rgb(60, 60, 60, 0.1);
+      }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: rgb(60, 60, 60, 0.1);
+    }
+
+
+    .row {
+        flex-direction: column;
+        display: inline-block;
+    }
+}
+
+</style>
+<body>
+<section>
+    <nav>
+        <a href="index.html"><img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_173/v1632205815/cars/tesla/Tesla-logo-PNG-File_gj7qgy.png"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="models.html">PRODUCT&MODEL</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    
+    
+    <!--media queries with max-width of 800px -->
+    
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-content">
+            <a href="models.html">PRODUCT&MODEL</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    
+            
+    </nav>
+        
+</section>
+
+<section class="contact">
+    <h1>Contact</h1>
+    <div class="row">
+        <div class="contact-col">
+            <h4>Sales</h4>
+            <hr><br>
+            <p>Visit our <a href="https://www.tesla.com/findus/store">Find Us</a> page to locate your nearest Tesla store.</p><br>
+                        
+            <h4>Careers</h4>
+            <hr><br>
+            <p>Visit our <a href="https://www.tesla.com/careers">Career</a> page for a list of current employment opportunities.</p><br>
+            
+            <h4>Customer Support & Roadside Assistance</h4>
+            <hr><br>
+            <p>Visit our <a href="https://www.tesla.com/support">Support</a> page to find answers and learn about our products.<br>
+                Emergency Roadside Assistance:
+                <a href="https://www.tesla.com/roadside-assistance">International Phone Numbers</a></p><br>
+                
+        </div>
+
+        <div class="contact-col">
+            <h3>Submit Question or Comment:</h3>
+            <form>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Dela Cruz">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Juan">
+                <label for="Number">Phone Number:</label>
+                <input type="text" id="Number" name="Number" placeholder="+639xx-xxx-xxxx">
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="DelaCruzJuan@Gmail.com">
+
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="asia">ASIA</option>
+                    <option value="us">US</option>
+                    <option value="eu">EUROPE</option>
+                </select>
+
+                <label for="describe">Comment or Question:</label>
+                <textarea>Describe...</textarea>
+
+                <input type="submit" value="Submit">
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</section>
+
+
+<section class="footer">
+    <p>Tesla 2021</p>
+
+    <img src="https://res.cloudinary.com/djo6hqejl/image/upload/c_scale,w_131/v1632461106/cars/tesla/kisspng-tesla-roadster-tesla-motors-tesla-model-s-car-salesforce-logo-5b4baab63766a3.2888556215316855582269_qwicat.png">
+
+</section>
+
+
+
+
+
+
+</body>
+
+</html>
